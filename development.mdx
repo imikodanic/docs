@@ -1,28 +1,16 @@
 ---
-title: 'Development'
-description: 'Preview changes locally to update your docs'
+title: "Development"
+description: "Preview changes locally to update your docs"
 ---
 
 <Info>
-  **Prerequisite**: Please install Node.js (version 19 or higher) before proceeding. <br />
-  Please upgrade to ```docs.json``` before proceeding and delete the legacy ```mint.json``` file.
+  **Prerequisite**: Please install Node.js (version 19 or higher) before proceeding. \
+   Please upgrade to `docs.json` before proceeding and delete the legacy `mint.json` file.
 </Info>
 
 Follow these steps to install and run Mintlify on your operating system:
 
 **Step 1**: Install Mintlify:
-
-<CodeGroup>
-
-  ```bash npm
-  npm i -g mintlify
-  ```
-
-```bash yarn
-yarn global add mintlify
-```
-
-</CodeGroup>
 
 **Step 2**: Navigate to the docs directory (where the `docs.json` file is located) and execute the following command:
 
@@ -31,6 +19,10 @@ mintlify dev
 ```
 
 A local preview of your documentation will be available at `http://localhost:3000`.
+
+<ParamField path="param" type="string">
+  Enter a description
+</ParamField>
 
 ### Custom Ports
 
@@ -52,12 +44,7 @@ Please note that each CLI release is associated with a specific version of Mintl
 
 <CodeGroup>
 
-```bash npm
-npm i -g mintlify@latest
-```
-
-```bash yarn
-yarn global upgrade mintlify
+``` File 3
 ```
 
 </CodeGroup>
@@ -70,6 +57,25 @@ The CLI can assist with validating reference links made in your documentation. T
 mintlify broken-links
 ```
 
+<ParamField path="param" body="{" type="string" required deprecated placeholder="teasdasd">
+  Enter a asdasdasasdas
+</ParamField>
+
+
+<Expandable title="Content">
+  <ResponseField name="response" type="stringasdasdasdasdasdasnbjkjknkjnjknkjkjnkjnjknjknjknkj" default="kjjkjkjkjknkjn" required={false} deprecated={false}>
+    asEnter a description 
+  </ResponseField>
+</Expandable>
+
+<RequestExample>
+
+``` filename
+kkjnjknkjnkjnjknkj
+```
+
+</RequestExample>
+
 ## Deployment
 
 <Tip>
@@ -80,7 +86,10 @@ mintlify broken-links
 If the deployment is successful, you should see the following:
 
 <Frame>
-  <img src="/images/checks-passed.png" style={{ borderRadius: '0.5rem' }} />
+  <img
+    src="/images/checks-passed.png"
+    style={{ borderRadius:"0.5rem" }}
+  />
 </Frame>
 
 ## Code Formatting
@@ -91,16 +100,14 @@ We suggest using extensions on your IDE to recognize and format MDX. If you're a
 
 <AccordionGroup>
   <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime'>
-
     This may be due to an outdated version of node. Try the following:
+
     1. Remove the currently-installed version of mintlify: `npm remove -g mintlify`
     2. Upgrade to Node v19 or higher.
     3. Reinstall mintlify: `npm install -g mintlify`
   </Accordion>
-
   <Accordion title="Issue: Encountering an unknown error">
-  
-    Solution: Go to the root of your device and delete the \~/.mintlify folder. Afterwards, run `mintlify dev` again.
+    Solution: Go to the root of your device and delete the ~/.mintlify folder. Afterwards, run `mintlify dev` again.
   </Accordion>
 </AccordionGroup>
 
