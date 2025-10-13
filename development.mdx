@@ -1,130 +1,17 @@
 ---
-title: "Development"
+title: "Get Users"
+description: "Some random description bla bla"
 ---
 
-okmlkmlk
+## Endpoint component same as on Treblle
 
-# Heading 1
+![Screenshot 2025-10-13 at 14.34.29.png](/images/Screenshot2025-10-13at14.34.29.png)
 
-## Heading 2
-
-### Heading 3
-
-> Blockquote
-
-- un List
-- asdad
-- ad
-
-1. Numbered list
-2. asd
-3. asd
-
-| asdasd            | asd | asd |
-| ----------------- | --- | :-: |
-| askdamsdlkamldasd |     |     |
-|                   | asd |     |
-|                   |     |     |
-
-<Steps>
-  <Step title="New Step">
-    
-  </Step>
-  <Step title="New Step" iconType="brands">
-    /
-  </Step>
-  <Step title="New Step">
-    asdasd
-  </Step>
-</Steps>
-
-asdasd
-
-<ParamField path="param" type="string">
-  Enter a description
-</ParamField>
-
-<ResponseField name="response" type="string" required>
-  Enter a description
-</ResponseField>
-
-<RequestExample>
-
-```bash Request Example
-curl --request GET \
-  --url http://treblle.com/users \
-  --header 'Authorization: Bearer <token>'
-```
-
-</RequestExample>
-
-<ResponseExample>
-
-```json 400
-{
-  code: "integer",
-  status: "boolean",
-  message: "string",
-  articles: [
-    {
-      uuid: "string",
-      title: "string",
-      content: "string",
-      image: "string",
-      views: "integer",
-      created: {
-        date: "string",
-        timezone_type: "integer",
-        timezone: "string"
-      },
-      user: {
-        name: "string",
-        email: "string",
-        phone_number: "string",
-        created: {
-          date: "string",
-          timezone_type: "integer",
-          timezone: "string"
-       },
-     uuid: "string"
-     }
-   }
- ]
-}
-```
-
-
-```json 500
-{
-  code: &quot;integer&quot;,
-  status: &quot;boolean&quot;,
-  message: &quot;string&quot;,
-  articles: [
-    {
-      uuid: &quot;string&quot;,
-      title: &quot;string&quot;,
-      content: &quot;string&quot;,
-      image: &quot;string&quot;,
-      views: &quot;integer&quot;,
-      created: {
-        date: &quot;string&quot;,
-        timezone_type: &quot;integer&quot;,
-        timezone: &quot;string&quot;
-      },
-      user: {
-        name: &quot;string&quot;,
-        email: &quot;string&quot;,
-        phone_number: &quot;string&quot;,
-        created: {
-          date: &quot;string&quot;,
-          timezone_type: &quot;integer&quot;,
-          timezone: &quot;string&quot;
-       },
-     uuid: &quot;string&quot;
-     }
-   }
- ]
-}
-```
-
-</ResponseExample>
+<Expandable title="Header parameters">
+  <ParamField path="authorization" type="string" required>
+    Bearer authentication header of the form Bearer, where token is your auth token.
+  </ParamField>
+  <ParamField path="label" type="integer">
+    Enter a description
+  </ParamField>
+</Expandable>
