@@ -38,7 +38,6 @@ okmlkmlk
   </Step>
 </Steps>
 
-
 asdasd
 
 <ParamField path="param" type="string">
@@ -49,13 +48,83 @@ asdasd
   Enter a description
 </ResponseField>
 
-
 <RequestExample>
 
-```json filename
-{
-kurac: "asdasd"
-}
+```bash Request Example
+curl --request GET \
+  --url http://treblle.com/users \
+  --header 'Authorization: Bearer <token>'
 ```
 
 </RequestExample>
+
+<ResponseExample>
+
+```json 400
+{
+  code: "integer",
+  status: "boolean",
+  message: "string",
+  articles: [
+    {
+      uuid: "string",
+      title: "string",
+      content: "string",
+      image: "string",
+      views: "integer",
+      created: {
+        date: "string",
+        timezone_type: "integer",
+        timezone: "string"
+      },
+      user: {
+        name: "string",
+        email: "string",
+        phone_number: "string",
+        created: {
+          date: "string",
+          timezone_type: "integer",
+          timezone: "string"
+       },
+     uuid: "string"
+     }
+   }
+ ]
+}
+```
+
+
+```json 500
+{
+  code: &quot;integer&quot;,
+  status: &quot;boolean&quot;,
+  message: &quot;string&quot;,
+  articles: [
+    {
+      uuid: &quot;string&quot;,
+      title: &quot;string&quot;,
+      content: &quot;string&quot;,
+      image: &quot;string&quot;,
+      views: &quot;integer&quot;,
+      created: {
+        date: &quot;string&quot;,
+        timezone_type: &quot;integer&quot;,
+        timezone: &quot;string&quot;
+      },
+      user: {
+        name: &quot;string&quot;,
+        email: &quot;string&quot;,
+        phone_number: &quot;string&quot;,
+        created: {
+          date: &quot;string&quot;,
+          timezone_type: &quot;integer&quot;,
+          timezone: &quot;string&quot;
+       },
+     uuid: &quot;string&quot;
+     }
+   }
+ ]
+}
+```
+
+</ResponseExample>
