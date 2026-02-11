@@ -103,7 +103,6 @@
       },
       "post": {
         "tags": [
-          "pet",
           "store"
         ],
         "summary": "Add a new pet to the store.",
