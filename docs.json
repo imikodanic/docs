@@ -31,7 +31,8 @@
     "tabs": [
       {
         "tab": "Guides",
-        "groups": [
+        "pages": [
+          "api-reference",
           {
             "group": "api-reference",
             "pages": [
